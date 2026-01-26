@@ -110,6 +110,34 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 
+// ===== Floating CTA Button Visibility =====
+const floatingCta = document.getElementById('floating-cta');
+const contactSection = document.getElementById('contacto');
+
+function initFloatingCta() {
+    if (!floatingCta || !contactSection) return;
+    
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // El formulario es visible, ocultar el botón
+                    floatingCta.classList.add('hidden');
+                } else {
+                    // El formulario no es visible, mostrar el botón
+                    floatingCta.classList.remove('hidden');
+                }
+            });
+        },
+        {
+            threshold: 0.2, // 20% del formulario visible
+            rootMargin: '0px'
+        }
+    );
+    
+    observer.observe(contactSection);
+}
+
 // ===== Smooth Scroll for Anchor Links =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -321,6 +349,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize butterfly scroll animation
     handleButterflyScroll();
+    
+    // Initialize floating CTA button
+    initFloatingCta();
 });
 
 // ===== Accessibility: Reduce motion =====
