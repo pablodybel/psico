@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Psicóloga con orientación psicoanalítica. +12 años de experiencia en niñez, adolescencia, vínculos familiares y violencia de género. Atención profesional en Buenos Aires.">
+    <meta name="keywords" content="psicóloga Buenos Aires, psicóloga niños, psicóloga adolescentes, terapia familiar, orientación psicoanalítica, Micaela Gubitosi, violencia de género, psicoterapia clínica">
+    <meta name="author" content="Lic. Micaela Gubitosi">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lic. Micaela Gubitosi - Psicóloga Clínica con Orientación Psicoanalítica">
+    <meta property="og:description" content="Psicóloga con +12 años de experiencia. Especializada en niñez, adolescencia, vínculos familiares y situaciones de crisis. Atención profesional en Buenos Aires.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:image" content="assets/images/personal/foto.png">
+    <meta property="og:url" content="https://micaelagubitosi.com">
+    <meta property="og:site_name" content="Lic. Micaela Gubitosi - Psicóloga">
+
+    <title>Lic. Micaela Gubitosi | Psicóloga Clínica Buenos Aires | Niñez, Adolescencia, Familia</title>
+
+    <!-- Google Fonts - Distinctive typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Lic. Micaela Gubitosi</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#sobre-mi" class="nav__link">Sobre Mí</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#servicios" class="nav__link">Servicios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#como-funciona" class="nav__link">Cómo Funciona</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacto" class="nav__link nav__link--cta">Agendar Consulta</a>
+                    </li>
+                </ul>
+
+                <button class="nav__close" id="nav-close" aria-label="Cerrar menú">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <!-- Animated Butterfly Background -->
+            <div class="hero__background">
+                <img src="assets/images/mariposa/ezgif-frame-001.jpg" 
+                     alt="Mariposa - símbolo de transformación" 
+                     class="butterfly-frame">
+            </div>
+            
+            <!-- Hero Content -->
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <p class="hero__greeting">Hola, soy Micaela</p>
+                    <h1 class="hero__title">
+                        Tu bienestar<br>
+                        <em>sin fronteras</em>
+                    </h1>
+                    <!-- Línea decorativa -->
+                    <svg class="hero__underline" viewBox="0 0 200 20" fill="none">
+                        <path d="M3 12 C 30 8, 50 16, 80 10 S 120 6, 150 14 S 180 8, 197 12"
+                              stroke="#C17F59"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              fill="none"/>
+                    </svg>
+                    <p class="hero__description">
+                        Psicóloga con orientación psicoanalítica y más de 12 años de experiencia.
+                        Especializada en niñez, adolescencia, vínculos familiares y situaciones de crisis.
+                        <strong>Un espacio seguro donde la palabra transforma el sufrimiento en posibilidad.</strong>
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#contacto" class="btn btn--primary">Solicitar Consulta</a>
+                        <a href="#sobre-mi" class="btn btn--outline">Conocer Más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mí -->
+        <section class="about" id="sobre-mi">
+            <div class="about__container container">
+                <div class="about__content">
+                    <span class="section__label">Sobre Mí</span>
+                    <h2 class="section__title">Lic. Micaela <em>Gubitosi</em></h2>
+                    <p class="about__text">
+                        Soy psicóloga graduada en la Universidad de Buenos Aires (UBA), con más de 12 años 
+                        de experiencia clínica e institucional. Mi formación de posgrado se especializa en 
+                        Psicología Clínica con Orientación Psicoanalítica, lo que me permite ofrecer un espacio 
+                        de escucha profunda y compromiso ético.
+                    </p>
+                    <p class="about__text">
+                        A lo largo de mi carrera, me he especializado en el acompañamiento de niños, 
+                        adolescentes y adultos, abordando problemáticas complejas con una mirada 
+                        interdisciplinaria y humana.
+                    </p>
+
+                    <h3 class="about__subtitle">Áreas de Especialización</h3>
+                    <ul class="about__credentials">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Clínica de Niñez y Adolescencia
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Vínculos y Familia
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Violencia de Género
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Enfermedades Psicosomáticas
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Situaciones de Crisis
+                        </li>
+                    </ul>
+
+                    <h3 class="about__subtitle">Trayectoria</h3>
+                    <ul class="about__credentials">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Juzgado de Familia (Poder Judicial Pcia. BA)
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Hospitales Rivadavia y Durand
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Consejo de Derechos de NNyA
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Publicaciones en salud mental
+                        </li>
+                    </ul>
+
+                    <blockquote class="about__quote">
+                        "Entiendo la terapia como un espacio seguro donde la palabra cobra valor para 
+                        transformar el sufrimiento en una nueva posibilidad."
+                    </blockquote>
+                </div>
+
+                <div class="about__image">
+                    <div class="about__image-frame">
+                        <img src="assets/images/personal/foto.png" alt="Lic. Micaela Gubitosi - Psicóloga">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section class="services" id="servicios">
+            <div class="services__container container">
+                <div class="services__header">
+                    <span class="section__label">Servicios</span>
+                    <h2 class="section__title">¿En qué puedo <em>ayudarte</em>?</h2>
+                </div>
+
+                <div class="services__grid">
+                    <article class="service__card">
+                        <div class="service__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path>
+                                <path d="M16 11h6"></path>
+                                <path d="M19 8v6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service__title">Clínica de Niñez y Adolescencia</h3>
+                        <p class="service__description">
+                            Abordaje integral de problemáticas en niños y adolescentes,
+                            acompañando el desarrollo emocional y vincular.
+                        </p>
+                    </article>
+
+                    <article class="service__card">
+                        <div class="service__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service__title">Vínculos y Familia</h3>
+                        <p class="service__description">
+                            Orientación a padres y madres, dinámicas familiares complejas
+                            y procesos de vinculación.
+                        </p>
+                    </article>
+
+                    <article class="service__card">
+                        <div class="service__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 6v6l4 2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service__title">Violencia de Género</h3>
+                        <p class="service__description">
+                            Acompañamiento y asesoramiento con perspectiva de género
+                            en situaciones de violencia.
+                        </p>
+                    </article>
+
+                    <article class="service__card">
+                        <div class="service__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service__title">Enfermedades Psicosomáticas</h3>
+                        <p class="service__description">
+                            Trabajo con la relación mente-cuerpo y el impacto
+                            emocional de enfermedades crónicas.
+                        </p>
+                    </article>
+
+                    <article class="service__card">
+                        <div class="service__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service__title">Situaciones de Crisis</h3>
+                        <p class="service__description">
+                            Contención emocional y orientación en momentos de
+                            angustia severa y crisis vitales.
+                        </p>
+                    </article>
+
+                    <article class="service__card">
+                        <div class="service__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service__title">Psicología de Adultos</h3>
+                        <p class="service__description">
+                            Acompañamiento terapéutico en procesos de transformación
+                            personal y búsqueda de bienestar emocional.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="services__benefits">
+                    <h3>¿Por qué iniciar un proceso conmigo?</h3>
+                    <div class="benefits__grid">
+                        <div class="benefit">
+                            <span class="benefit__icon">🎓</span>
+                            <span class="benefit__text">Formación en Psicología Clínica con Orientación Psicoanalítica</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit__icon">🏛️</span>
+                            <span class="benefit__text">Experiencia en instituciones públicas, judiciales y privadas</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit__icon">🤝</span>
+                            <span class="benefit__text">Abordaje interdisciplinario y mirada humana</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit__icon">🔒</span>
+                            <span class="benefit__text">Espacio seguro, confidencial y ético</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo Funciona -->
+        <section class="process" id="como-funciona">
+            <div class="process__container container">
+                <div class="process__header">
+                    <span class="section__label">Cómo Funciona</span>
+                    <h2 class="section__title">Comenzar es <em>muy simple</em></h2>
+                </div>
+
+                <div class="process__steps">
+                    <div class="step">
+                        <div class="step__number">1</div>
+                        <h3 class="step__title">Completá el formulario</h3>
+                        <p class="step__description">
+                            Dejá tus datos y contame brevemente qué te gustaría trabajar.
+                        </p>
+                    </div>
+
+                    <div class="step__connector"></div>
+
+                    <div class="step">
+                        <div class="step__number">2</div>
+                        <h3 class="step__title">Te contacto por email</h3>
+                        <p class="step__description">
+                            Me comunico con vos en un plazo de 24-48 horas para coordinar.
+                        </p>
+                    </div>
+
+                    <div class="step__connector"></div>
+
+                    <div class="step">
+                        <div class="step__number">3</div>
+                        <h3 class="step__title">Primera videollamada</h3>
+                        <p class="step__description">
+                            Nos conocemos y evaluamos si podemos trabajar juntos.
+                        </p>
+                    </div>
+
+                    <div class="step__connector"></div>
+
+                    <div class="step">
+                        <div class="step__number">4</div>
+                        <h3 class="step__title">Comenzamos la terapia</h3>
+                        <p class="step__description">
+                            Iniciamos el proceso terapéutico con sesiones semanales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="contact" id="contacto">
+            <div class="contact__container container">
+                <div class="contact__content">
+                    <span class="section__label">Contacto</span>
+                    <h2 class="section__title">Agenda tu <em>consulta</em></h2>
+                    <p class="contact__text">
+                        Completá el formulario y me pondré en contacto con vos
+                        para coordinar una primera sesión. Tu información es confidencial.
+                    </p>
+
+                    <div class="contact__info">
+                        <div class="contact__info-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>contacto@example.com</span>
+                        </div>
+                        <div class="contact__info-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Buenos Aires, Argentina</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form" id="contact-form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Nombre completo *</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="form__input"
+                            required
+                            placeholder="Tu nombre"
+                        >
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form__input"
+                            required
+                            placeholder="tu@email.com"
+                        >
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="country" class="form__label">País de residencia *</label>
+                            <input
+                                type="text"
+                                id="country"
+                                name="country"
+                                class="form__input"
+                                required
+                                placeholder="Ej: España, México, USA"
+                            >
+                        </div>
+
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Teléfono (opcional)</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                class="form__input"
+                                placeholder="+1 234 567 890"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="message" class="form__label">¿En qué puedo ayudarte?</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            class="form__textarea"
+                            rows="4"
+                            placeholder="Contame brevemente qué te gustaría trabajar..."
+                        ></textarea>
+                    </div>
+
+                    <div class="form__group form__checkbox">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">
+                            Acepto la política de privacidad y el tratamiento de mis datos personales *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                        <span class="btn__text">Enviar Solicitud</span>
+                        <span class="btn__loading" style="display: none;">Enviando...</span>
+                    </button>
+
+                    <div class="form__message" id="form-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3 class="footer__logo">Lic. Micaela Gubitosi</h3>
+                    <p class="footer__description">
+                        Psicoterapia online en español para hispanohablantes en el exterior.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h4>Redes Sociales</h4>
+                    <div class="social__links">
+                        <a href="#" aria-label="Instagram" class="social__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2025 Lic. Micaela Gubitosi. Todos los derechos reservados.
+                </p>
+                <p class="footer__legal">
+                    Este sitio fue creado con cuidado desde Buenos Aires.
+                    Cada consulta es confidencial y tratada con el mayor respeto.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
