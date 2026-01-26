@@ -60,6 +60,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--header-height);
+    color-scheme: light only;
 }
 
 body {
@@ -71,6 +72,7 @@ body {
     background-color: var(--color-cream);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    color-scheme: light only;
 }
 
 img { max-width: 100%; display: block; }
