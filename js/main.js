@@ -17,9 +17,9 @@ const formMessage = document.getElementById('form-message');
 // IMPORTANTE: Reemplaza estos valores con tus credenciales de EmailJS
 // Puedes obtenerlas gratis en https://www.emailjs.com/
 const EMAILJS_CONFIG = {
-    publicKey: 'TU_PUBLIC_KEY',      // Reemplazar con tu Public Key
-    serviceId: 'TU_SERVICE_ID',      // Reemplazar con tu Service ID
-    templateId: 'TU_TEMPLATE_ID'     // Reemplazar con tu Template ID
+    publicKey: 'uhB2XkrLGBlc9wEhj',      // Public Key de EmailJS
+    serviceId: 'service_ab2b82y',         // Service ID de EmailJS
+    templateId: 'template_p7ntzp5'       // Template ID de EmailJS
 };
 
 // ===== Initialize EmailJS =====
@@ -246,25 +246,43 @@ async function handleFormSubmit(e) {
     setLoading(true);
 
     try {
-        await emailjs.send(
+        const templateParams = {
+            from_name: formData.name,
+            from_email: formData.email,
+            country: formData.country,
+            phone: formData.phone,
+            message: formData.message,
+            to_email: 'licgubitosimicaela@gmail.com'
+        };
+
+        const response = await emailjs.send(
             EMAILJS_CONFIG.serviceId,
             EMAILJS_CONFIG.templateId,
-            {
-                from_name: formData.name,
-                from_email: formData.email,
-                country: formData.country,
-                phone: formData.phone,
-                message: formData.message,
-                to_email: 'contacto@example.com' // Email de destino
-            }
+            templateParams
         );
 
+        console.log('EmailJS Success:', response);
         showMessage('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.', 'success');
         contactForm.reset();
 
     } catch (error) {
-        console.error('EmailJS Error:', error);
-        showMessage('Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.', 'error');
+        console.error('EmailJS Error Details:', error);
+        console.error('Error Status:', error.status);
+        console.error('Error Text:', error.text);
+        
+        let errorMessage = 'Hubo un error al enviar el mensaje. ';
+        
+        if (error.status === 400) {
+            errorMessage += 'Verifica que los nombres de las variables en tu plantilla de EmailJS coincidan con: from_name, from_email, country, phone, message.';
+        } else if (error.status === 401) {
+            errorMessage += 'Verifica tu Public Key en la configuración.';
+        } else if (error.status === 404) {
+            errorMessage += 'Verifica tu Service ID y Template ID en la configuración.';
+        } else {
+            errorMessage += 'Por favor, intenta nuevamente.';
+        }
+        
+        showMessage(errorMessage, 'error');
     } finally {
         setLoading(false);
     }
